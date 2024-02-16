@@ -19,7 +19,6 @@ function second_simvol($str)
     }
 
     asort($n_arr, SORT_NUMERIC);
-    print_r($n_arr);
 
     return "Второй по встречаемости символ = '" . array_search($second_max, $n_arr) . "'";
 }
