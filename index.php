@@ -20,8 +20,8 @@ function second_simvol($str)
 
     asort($n_arr, SORT_NUMERIC);
 
-    return "Второй по встречаемости символ = '" . array_search($second_max, $n_arr) . "'";
+    return array_search($second_max, $n_arr);
 }
 
 $str = "abccdccefffgihhhhhj";
-echo second_simvol($str);
+echo "Второй по встречаемости символ = '" .  second_simvol($str) . "'";
